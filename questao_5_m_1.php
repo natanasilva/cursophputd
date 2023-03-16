@@ -84,35 +84,22 @@
                                     <?php
                                     if (isset($_POST['submit'])) {
                                         $qtdDeApostas = $_POST["qtdapostas"];
-                                        $NumerosDisponiveis = range(1, 60);
-                                        $QntDezenas = 6;
+                                        # Gera os 6 números
+                                        $a = 1;
+                                        while ($a <= $qtdDeApostas) {
+                                            # Gera os 6 números
+                                            for ($i = 1; $i <= 6; $i++) {
+                                                $n[] = str_pad(rand(1, 60), 2, '0', STR_PAD_LEFT);
+                                            }
 
-                                        for ($i = 0; $i < $qtdDeApostas; $i++) {
-                                            echo gerarCombinacao($QntDezenas, $NumerosDisponiveis);
+                                            # Ordena os números
+                                            sort($n);
+                                            # Exibe os números
+                                            echo implode(' - ', $n);
                                             echo "<hr>";
+                                            $a++;
+                                            unset ($n);
                                         }
-                                    }
-
-                                    function gerarCombinacao($QntDezenas, $NumerosDisponiveis)
-                                    {
-
-                                        $QntDisponivel = count($NumerosDisponiveis);
-
-                                        if ($QntDisponivel < $QntDezenas) {
-                                            return false;
-                                        }
-
-                                        for ($n = 0; $n < $QntDezenas; $n++) {
-
-                                            $EscolhaAleatoria = random_int(0, $QntDisponivel - ($n + 1));
-
-                                            $NumerosDisponiveis = array_values($NumerosDisponiveis);
-
-                                            $Combinacao[] = str_pad($NumerosDisponiveis[$EscolhaAleatoria], 2, '0', STR_PAD_LEFT);
-                                            unset($NumerosDisponiveis[$EscolhaAleatoria]);
-                                        }
-
-                                        return implode('-', $Combinacao);
                                     }
                                     ?>
 
