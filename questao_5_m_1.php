@@ -141,15 +141,6 @@
     <!-- ./wrapper -->
 
     <!-- REQUIRED SCRIPTS -->
-    <!-- jQuery Mapael -->
-    <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-    <script src="plugins/raphael/raphael.min.js"></script>
-    <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
-    <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
-    <!-- ChartJS -->
-    <script src="plugins/chart.js/Chart.min.js"></script>
-
-    <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- overlayScrollbars -->
@@ -158,13 +149,6 @@
     <script src="dist/js/adminlte.js"></script>
 
     <!-- PAGE PLUGINS -->
-    <!-- jQuery Mapael -->
-    <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-    <script src="plugins/raphael/raphael.min.js"></script>
-    <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
-    <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
-    <!-- ChartJS -->
-    <script src="plugins/chart.js/Chart.min.js"></script>
 
     <!-- AdminLTE for demo purposes 
   <script src="dist/js/demo.js"></script> -->
@@ -176,44 +160,12 @@
     <!-- DataTables  & Plugins -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes 
     <script src="dist/js/demo.js"></script>-->
     <!-- Page specific script -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#Table').DataTable({
-                "language": {
-                    "sProcessing": "Processando...",
-                    "sLengthMenu": "Mostrar _MENU_ registros",
-                    "sZeroRecords": "Não foram encontrados resultados",
-                    "sEmptyTable": "Nenhum dado disponivel nesta tabela",
-                    "sInfo": "Mostrando registros de _START_ a _END_ de um total de _TOTAL_ registros",
-                    "sInfoEmpty": "Mostrando registros de 0 a 0 de un total de 0 registros",
-                    "sInfoFiltered": "(filtrado de um total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Buscar:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Carregando...",
-                    "oPaginate": {
-                        "sFirst": "Primeiro",
-                        "sLast": "Último",
-                        "sNext": "Seguinte",
-                        "sPrevious": "Anterior"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Ativar para ordenar a coluna em ordem ascendente",
-                        "sSortDescending": ": Ativar para ordenar a coluna em ordem descendente"
-                    }
-                }
-            });
-        });
-    </script>
-
+    
 </body>
 
 </html>
