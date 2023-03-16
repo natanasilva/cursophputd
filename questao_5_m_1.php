@@ -90,7 +90,14 @@
                                                 $n[] = str_pad(rand(1, 60), 2, '0', STR_PAD_LEFT);
                                             }
                                             sort($n);
-                                            echo implode(' - ', $n);
+                                            $novaa = array_unique($n);
+                                                while (count($novaa) < 6) { 
+                                                    $n[] = str_pad(rand(1, 60), 2, '0', STR_PAD_LEFT);
+                                                    sort($n);
+                                                    $novaa = array_unique($n);
+                                                    unset ($n);
+                                                }
+                                            echo implode(' - ', $novaa);
                                             echo "<hr>";
                                             $a++;
                                             unset ($n);
