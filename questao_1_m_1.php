@@ -142,9 +142,8 @@
                                         $numeros = $_POST;
                                         sort($numeros);
                                         foreach ($numeros as $numero) {
-                                            echo "$numero<br>";
+                                            echo  $numero." <hr>";
                                         }
-                                        echo "<br>";
                                     }
                                     ?>
 
