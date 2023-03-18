@@ -139,16 +139,7 @@
 
                                     <?php
                                     if (isset($_POST['submit'])) {
-                                        $numeros[0] = $_POST['numero1'];
-                                        $numeros[1] = $_POST['numero2'];
-                                        $numeros[2] = $_POST['numero3'];
-                                        $numeros[3] = $_POST['numero4'];
-                                        $numeros[4] = $_POST['numero5'];
-                                        $numeros[5] = $_POST['numero6'];
-                                        $numeros[6] = $_POST['numero7'];
-                                        $numeros[7] = $_POST['numero8'];
-                                        $numeros[8] = $_POST['numero9'];
-                                        $numeros[9] = $_POST['numero10'];
+                                        $numeros = $_POST;
                                         sort($numeros);
                                         foreach ($numeros as $numero) {
                                             echo "$numero<br>";
